@@ -45,7 +45,7 @@
 ---
 
 ## 📸 Screenshots
-> _Add your app screenshots here to showcase the UI and features._
+>[ _Add your app screenshots here to showcase the UI and features._](https://github.com/suneha09/HealthMate/blob/80e41873e88417423b6f5c50c356c41565c4572a/Screenshot%202025-06-29%20183453.png)
 
 ---
 
