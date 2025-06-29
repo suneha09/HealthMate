@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.healthmate">
+
+    <application
+        android:allowBackup="true"
+        android:label="HealthMate"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HealthMate">
+
+        <!-- Splash Screen as Launcher -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Home Page Activity -->
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true" />
+
+        <!-- Main Page Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <!-- Other Activities (Add as needed) -->
+        <activity android:name=".tipActivity" android:exported="true" />
+        <activity android:name=".bmiActivity" android:exported="true" />
+        <activity android:name=".bmrActivity" android:exported="true" />
+        <activity android:name=".TdeeActivity" android:exported="true" />
+        <!-- Add any other activity you have similarly... -->
+
+    </application>
+</manifest>

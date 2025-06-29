@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="#FFFFFF">
+
+    <!-- IMAGE AT THE TOP -->
+    <ImageView
+        android:id="@+id/image_body_fat"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/body_fat"
+        android:contentDescription="Body Fat Calculator"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Body Fat Calculator"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingBottom="12dp" />
+
+    <EditText
+        android:id="@+id/edit_weight"
+        android:hint="Enter weight (kg)"
+        android:inputType="numberDecimal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/edit_height"
+        android:hint="Enter height (cm)"
+        android:inputType="numberDecimal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/edit_age"
+        android:hint="Enter age"
+        android:inputType="number"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/button_calculate"
+        android:text="Calculate"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/text_result"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingTop="12dp" />
+
+</LinearLayout>

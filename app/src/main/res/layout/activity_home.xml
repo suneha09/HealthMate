@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- App Logo -->
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/app_logo"
+            android:contentDescription="App Logo"
+            android:layout_marginBottom="16dp" />
+
+        <!-- App Name -->
+        <TextView
+            android:text="HealthMate"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Tip of the Day Button -->
+        <Button
+            android:id="@+id/button_health_tip"
+            android:text="💡 Health Tip of the Day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Sample Buttons -->
+        <Button
+            android:id="@+id/button_bmi"
+            android:text="Calculate BMI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/button_bmr"
+            android:text="Calculate BMR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/button_settings"
+            android:text="Settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/button_go_to_main"
+            android:text="Go to Main Page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp" />
+
+
+    </LinearLayout>
+</ScrollView>

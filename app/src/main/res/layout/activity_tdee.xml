@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- IMAGE for TDEE Calculator -->
+        <ImageView
+            android:id="@+id/image_tdee"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="TDEE Icon"
+            android:src="@drawable/tdee" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:text="🎯 TDEE Calculator"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter weight (kg)"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/edit_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter height (cm)"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/edit_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter age"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/edit_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter gender (male/female)"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/edit_activity_factor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter activity factor (e.g., 1.2 - 1.9)"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/button_calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Calculate" />
+
+        <TextView
+            android:id="@+id/text_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text=""
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</ScrollView>

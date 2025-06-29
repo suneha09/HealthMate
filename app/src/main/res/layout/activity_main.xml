@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- APP LOGO -->
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="App Logo"
+            android:src="@drawable/default_image" />
+
+        <!-- Health Tip of the Day -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:text="🥗 Health Tip of the Day"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_health_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Refresh Tip" />
+
+        <!-- CALCULATORS GRID -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:paddingTop="16dp"
+            android:rowCount="4">
+
+            <Button
+                android:id="@+id/button_bmi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="BMI" />
+
+            <Button
+                android:id="@+id/button_bmr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="BMR" />
+
+            <Button
+                android:id="@+id/button_tdee"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="TDEE" />
+
+            <Button
+                android:id="@+id/button_bodyfat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Body Fat" />
+
+            <Button
+                android:id="@+id/button_water"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Water" />
+
+            <Button
+                android:id="@+id/button_ibw"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="IBW" />
+
+            <Button
+                android:id="@+id/button_pregnancy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Pregnancy Due Date" />
+
+            <Button
+                android:id="@+id/button_heartrate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Heart Rate" />
+
+            <Button
+                android:id="@+id/button_caloriesburned"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Calories Burned" />
+
+            <Button
+                android:id="@+id/button_fasting"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Intermittent Fasting" />
+
+            <Button
+                android:id="@+id/button_sleep"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Sleep Cycle" />
+
+            <Button
+                android:id="@+id/button_mealtiming"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Meal Timing Plan" />
+        </GridLayout>
+
+        <!-- DIET PLANS -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="24dp"
+            android:text="🥗 Diet Plans"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_weight_gain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight Gain" />
+
+            <Button
+                android:id="@+id/button_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Normal" />
+
+            <Button
+                android:id="@+id/button_weight_loss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight Loss" />
+        </LinearLayout>
+
+        <!-- SETTINGS BUTTON -->
+        <Button
+            android:id="@+id/button_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Settings" />
+
+    </LinearLayout>
+</ScrollView>

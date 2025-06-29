@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center">
+
+        <!-- Image for Intermittent Fasting -->
+        <ImageView
+            android:id="@+id/image_intermittent"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/intermittent"
+            android:contentDescription="Intermittent Fasting"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:text="Intermittent Fasting Calculator"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp" />
+
+        <EditText
+            android:id="@+id/edit_fasting_hours"
+            android:hint="Enter fasting hours per day (e.g., 16)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button_calculate"
+            android:text="Calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/text_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>

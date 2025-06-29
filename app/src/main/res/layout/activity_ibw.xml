@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- New Image for IBW Screen -->
+        <ImageView
+            android:id="@+id/image_ibw"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="IBW"
+            android:src="@drawable/ibw_image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:text="Ideal Body Weight (IBW) Calculator"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your height (cm)"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/edit_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your gender (male/female)"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/button_calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Calculate IBW" />
+
+        <TextView
+            android:id="@+id/text_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text=""
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</ScrollView>
