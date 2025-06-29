@@ -57,7 +57,7 @@ This project is for educational purposes. Feel free to use or adapt with credit.
 
 ## 🙋‍♀️ Created By
 
-**Suneha Kaur**  
+**Suneha **  
 Final year B.Tech CSE student at Guru Nanak Dev University  
 Passionate about technology, wellness, and building useful apps.
 
